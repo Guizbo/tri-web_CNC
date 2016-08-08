@@ -110,4 +110,9 @@ void parsePCCommand(char* pcserial){
       zcoord = atof(zchar);
     }
   }
+  
+  // Next step:       Print on Serial (PC) xoord, ycoord and zcoord. Check if numbers show up ok.
+  // Following step:  Manipulate coords to equivalent S1, S2 and S3 payed out lengths.
+  //                  Compile back into "G" command.
+  //                  Print on Serial1 to send to GRBL.
 }
