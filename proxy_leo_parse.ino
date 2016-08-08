@@ -9,7 +9,6 @@ void setup() {
 }
 
 const int BUFFER_SIZE = 70;
-const int COORD_SIZE = 20;
 char pcserial[BUFFER_SIZE];
 char grserial[BUFFER_SIZE];
 
@@ -64,8 +63,9 @@ void loop() {
 
 // Analyze every line and choose an action
 void parseGrblLine(char* grserial){
-
 }
+
+const int COORD_SIZE = 20; // Do I need COORD_SIZE or [] would do?
 
 // Analyze every command (from PC => GRBL) and choose an action
 void parsePCCommand(char* pcserial){
